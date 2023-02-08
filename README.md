@@ -1,1 +1,1 @@
-# netbook-landing-page
+Landing page based on figma design
