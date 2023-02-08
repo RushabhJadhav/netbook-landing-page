@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --blue-color: #217BF4;
+    --grey-color: #656464;
+    --dark-blue: #2F2C4A;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.div-head-texts {
+    width: 350px;
+    margin: auto;
+    line-height: 24px;
+    text-align: center;
+}
+.div-head-texts h2 {
+    line-height: 40px;
+    font-size: 1.8rem;
+}
+.div-head-texts p:first-of-type {
+    color: var(--blue-color);
+}
+.div-head-texts p:last-of-type {
+    color: var(--grey-color);
+}
+
+header {
+    display: none;
+}
+
+/* page reviews container */
+.page-reviews {
+    border: 1px solid red;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.page-review-texts {
+    text-align: left !important;
+}
+.page-review-texts button {
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+}
+.page-review-texts button span {
+    margin-left: 10px;
+}
+.page-review-texts p:last-of-type {
+    margin: 10px 0;
+}
+.page-ratings, .page-awards {
+    padding: 40px;
+    border: 1px solid rgba(101, 100, 100, .1);
+    border-radius: 10px;
+    transition: all .5s linear;
+}
+.page-ratings:hover, .page-awards:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.page-awards > p:first-of-type {
+    position: relative;
+    padding-left: 50px;
+}
+.page-awards > p:first-of-type:before {
+    content: "";
+    background: url("../images/logos/Ellipse\ 14.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+}
+.page-ratings h4::before {
+    content: "";
+    background: url("../images/logos/Star.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+.page-awards h4::before {
+    content: "";
+    background: url("../images/logos/Trophy.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+.page-div {
+    width: 300px;
+}
+.page-div h4 {
+    position: relative;
+    padding-left: 50px;
+}
+.page-div > p:first-of-type {
+    margin: 25px 0;
+}
+.page-div > p:last-of-type {
+    color: var(--grey-color);
+    margin-bottom: 25px;
+}
+.page-div a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    transition: all .4s linear;
+}
+.page-div a:hover {
+    color: var(--blue-color);
+}
