@@ -10,6 +10,9 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
+body {
+    overflow-x: hidden;
+}
 
 .div-head-texts {
     width: 350px;
@@ -28,62 +31,10 @@
     color: var(--grey-color);
 }
 
+/* header styling */
 header {
     background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
-}
-nav {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
-}
-nav .logo-div ul {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin-left: 50px;
-}
-nav .logo-div ul li {
-    list-style-type: none;
-}
-nav .logo-div ul li a {
-    text-decoration: none;
-    color: #656464;
-}
-nav .logo-div ul li:hover a {
-    color: #2B2B39;
-    font-weight: bold;
-}
-.nav-btn-cont {
     position: relative;
-}
-.nav-btn-cont input {
-    width: 9vw;
-    height: 7vh;
-    border: none;
-    cursor: pointer;
-    position: relative;
-}
-#search-btn {
-    padding-left: 25px;
-    margin-right: 20px;
-    color: #686868;
-    background-color: transparent;
-    border-bottom: 1px solid #615f5f;
-}
-#log-in-btn {
-    color: #fff;
-    background-color: var(--blue-color);
-    border-radius: 10px;
-}
-.fa {
-    position: absolute;
-    top: 30%;
-    color: #686868;
 }
 .header-text-img-cont {
     display: flex;
@@ -131,6 +82,143 @@ nav .logo-div ul li:hover a {
     background: transparent;
     color: var(--blue-color);
     margin-left: 10px;
+}
+
+/* nav bar styling */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+nav .logo-div ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 50px;
+}
+nav .logo-div ul li {
+    list-style-type: none;
+}
+nav .logo-div ul li a {
+    text-decoration: none;
+    color: #656464;
+}
+nav .logo-div ul li:hover a {
+    color: #2B2B39;
+    font-weight: bold;
+}
+.nav-btn-cont {
+    position: relative;
+}
+.nav-btn-cont input {
+    width: 9vw;
+    height: 7vh;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+#search-btn {
+    padding-left: 25px;
+    margin-right: 20px;
+    color: #686868;
+    background-color: transparent;
+    border-bottom: 1px solid #686868;
+    width: 7vw;
+}
+#search-btn::placeholder {
+    font-size: 1vw;
+}
+#search-btn:focus {
+    outline: none;
+}
+#log-in-btn {
+    color: #fff;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+}
+.fa {
+    position: absolute;
+    top: 30%;
+    color: #686868;
+}
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+}
+.menu-bar {
+    background-color: var(--dark-blue);
+    width: 30px;
+    margin: 5px;
+    height: 4px;
+    border-radius: 10px;
+    transition: all 0.6s ease;
+}
+#mobile-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+    text-align: center;
+    transition: all .6s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mobile-nav li {
+    list-style-type: none;
+    background: transparent;
+    padding: 20px 50px;
+}
+#mobile-nav li a {
+    color: #2B2B39;
+    text-decoration: none;
+}
+#mobile-nav li a:hover {
+    font-weight: bold;
+}
+.hamburger-menu.open .menu-bar:nth-of-type(1) {
+    transform: rotate(45deg) translate(1px, 12px);
+}
+.hamburger-menu.open .menu-bar:nth-of-type(2) {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+.hamburger-menu.open .menu-bar:nth-of-type(3) {
+    transform: rotate(-45deg) translate(0,-12px);
+}
+#mobile-search {
+    padding: 0;
+    position: relative;
+}
+#mobile-search-icon {
+    position: absolute;
+    top: 30px;
+    left: 55px;
+}
+#mobile-search-btn {
+    border: none;
+    padding: 10px 30px;
+    border-bottom: 1px solid #2B2B39;
+    background: transparent;
+    outline: none;
+    width: 10vw;
+}
+#mobile-log-in-btn {
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: var(--blue-color);
+    border-radius: 10px;
 }
 
 /* intorductory container */
