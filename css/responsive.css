@@ -1,0 +1,116 @@
+@media screen and (max-width: 1040px) {
+
+    /* header styling */
+    nav {
+        width: 90%;
+    }
+    .nav-btn-cont input {
+        height: 6vh;
+    }
+
+    /* introductory container */
+    .introductory-cont {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .intro-vid-texts {
+        margin-top: 50px;
+    }
+
+    /* page reviews container */
+    .page-reviews {
+        flex-wrap: wrap-reverse;
+        gap: 40px;
+    }
+    #page-texts {
+        text-align: center !important;
+    }
+
+    /* app container styling */
+    #app-img {
+        width: 500px;
+    }
+    .app-texts {
+        margin-left: 100px;
+    }
+
+    /* footer-styling */
+    .footer-section-1 {
+        width: 90%;
+    }
+    .subcription-cont .sub-btn {
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* header styling */
+    nav .logo-div ul {
+        display: none;
+    }
+    .nav-btn-cont {
+        display: none;
+    }
+    .header-text-img-cont {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .header-text-img-cont img {
+        width: 50%;
+    }
+    .header-texts h2 {
+        line-height: 40px !important;
+        margin: 10px 0;
+    }
+    .header-btn-cont {
+        margin: 10px auto;
+    }
+    .header-btn-cont button {
+        width: 12vw;
+        height: 8vh;
+        padding: 0;
+        font-size: 1em;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* features container */
+    .feature-wrapper {
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+
+    /* app container styling */
+    #app-img {
+        width: 400px;
+    }
+    .app-texts {
+        margin-left: 80px;
+    }
+
+    /* footer styling */
+    .footer-section-1 {
+        width: 90%;
+    }
+    .subcription-cont {
+        width: 40% !important;
+        text-align: center !important;
+    }
+    .footer-section-1 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-modal > p {
+        font-size: 1rem;
+    }
+    .footer-logo p {
+        font-size: 1.2rem;
+    }
+    .social-media-icons img {
+        width: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {}
