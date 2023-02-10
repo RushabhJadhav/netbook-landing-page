@@ -72,6 +72,7 @@ footer {
     margin: auto;
     padding: 70px 0 70px 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -81,15 +82,16 @@ footer {
     flex-direction: row;
     gap: 50px;
 }
+.footer-links-cont ul {
+    text-align: left;
+}
 .footer-links-cont ul h3 {
     margin-bottom: 40px;
-    text-align: left;
 }
 .footer-links-cont ul li {
     margin-bottom: 25px;
     list-style-position: inside;
     list-style-type: none;
-    text-align: left;
 }
 .footer-links-cont ul li a {
     text-decoration: none;
@@ -99,7 +101,7 @@ footer {
     text-decoration: underline;
 }
 .subscription-cont {
-    width: 30%;
+    width: 250px;
 }
 .subscription-cont p:nth-child(1) {
     font-weight: bold;
