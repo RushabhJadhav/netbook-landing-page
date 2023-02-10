@@ -90,17 +90,41 @@
         margin-left: 80px;
     }
 
+    /* news container styling */
+    .news-box-cont {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-box {
+        width: 250px;
+    }
+    .news-headline p:first-of-type::before {
+        width: 25px;
+    }
+
     /* footer styling */
     .footer-section-1 {
         width: 90%;
     }
-    .subcription-cont {
-        width: 40% !important;
-        text-align: center !important;
-    }
     .footer-section-1 {
         flex-direction: column;
         gap: 40px;
+    }
+    .footer-links-cont {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-links-cont ul {
+        width: 100px;
+        text-align: center;
+    }
+    .footer-modal {
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+        padding: 20px 0;
     }
     .footer-modal > p {
         font-size: 1rem;
@@ -113,4 +137,53 @@
     }
 }
 
-@media screen and (max-width: 450px) {}
+@media screen and (max-width: 450px) {
+    /* header styling */
+    .header-text-img-cont {
+        flex-direction: column;
+    }
+    .header-text-img-cont img {
+        width: 90%;
+    }
+    #header-texts {
+        text-align: center;
+        width: 90% !important;
+        font-size: .6rem;
+        line-height: 20px !important;
+    }
+    .header-btn-cont button {
+        width: 80px;
+        height: 40px;
+    }
+    /* introductory container */
+    .introductory-cont {
+        padding-bottom: 0;
+    }
+    .intro-texts {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .intro-texts ul li::before {
+        left: 30%;
+    }
+    .intro-vid-texts {
+        width: 100%;
+        margin: 50px;
+    }
+    .intro-vid-texts img {
+        width: 100px;
+        height: 100px;
+    }
+    .intro-vid-texts img:nth-of-type(1) {
+        height: 160px;
+    }
+    /* features container */
+    .feature-wrapper {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    /* app container styling */
+    #app-img {
+        display: none;
+    }
+}
